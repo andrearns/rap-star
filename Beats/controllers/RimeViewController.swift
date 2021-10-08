@@ -1,14 +1,28 @@
 import UIKit
 import Foundation
 import AVFoundation
+import Speech
 
-class RimeViewController: UIViewController {
+class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
 
     var beat: Beat!
     var rimeCurrentState: RimeCurrentState = .playing
     var timer = Timer()
     var player: AVAudioPlayer?
     
+    private let speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "pt-BR"))
+    private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
+    private var recognitionTask: SFSpeechRecognitionTask?
+    private let audioEngine = AVAudioEngine()
+    
+    var transcriptionText: String = ""
+    var points: Int = 0
+    
+    @IBOutlet var pointsLabel: UILabel!
+    @IBOutlet var easyWordBackgroundView: UIView!
+    @IBOutlet var mediumWordBackgroundView: UIView!
+    @IBOutlet var hardWordBackgroundView: UIView!
+    @IBOutlet var transcriptLabel: UILabel!
     @IBOutlet var beatNameLabel: UILabel!
     @IBOutlet var beatImageView: UIImageView!
     @IBOutlet var artistNameLabel: UILabel!
@@ -18,8 +32,8 @@ class RimeViewController: UIViewController {
     @IBOutlet var hardWordLabel: UILabel!
     @IBOutlet var wordsIntervalLabel: UILabel!
     @IBOutlet var wordsIntervalSlider: UISlider!
-    
     @IBOutlet var progressBarWidthConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,11 +55,108 @@ class RimeViewController: UIViewController {
         
         // Player
         configurePlayer()
+        
+        // Speech Recognizer
+        speechRecognizer?.delegate = self
+        
+        if audioEngine.isRunning {
+            audioEngine.stop()
+            recognitionRequest?.endAudio()
+        } else {
+            startRecording()
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         removePlayer()
+    }
+    
+    func startRecording() {
+        if recognitionTask != nil {
+            recognitionTask?.cancel()
+            recognitionTask = nil
+        }
+        
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(.playAndRecord)
+            try audioSession.setMode(.measurement)
+            try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
+        } catch {
+            print("audioSession properties weren`t set beacuse of an error.")
+        }
+        
+        recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
+        
+        let inputNode = audioEngine.inputNode
+        
+        guard let recognitionRequest = recognitionRequest else {
+            print("Unable to create an SFSpeechAudioBufferRecognitionRequest object")
+            return
+        }
+        
+        recognitionRequest.shouldReportPartialResults = true
+        
+        recognitionTask = speechRecognizer?.recognitionTask(with: recognitionRequest, resultHandler: { result, error in
+            
+            var isFinal = false
+            
+            if result != nil {
+                self.transcriptionText = (result?.bestTranscription.formattedString)!
+                
+                if self.transcriptionText.count > 50 {
+                    let newString = self.transcriptionText.dropFirst(self.transcriptionText.count - 50)
+                    self.transcriptionText = String(newString)
+                }
+                
+                self.transcriptLabel.text = self.transcriptionText
+                
+                if self.transcriptLabel.text?.contains(self.easyWordLabel.text!.lowercased()) == true {
+                    print("Easy word done")
+                    self.easyWordBackgroundView.backgroundColor = UIColor(named: "NeonGreen")
+                    self.easyWordLabel.textColor = .white
+                    self.points += 10
+                } else if self.transcriptLabel.text?.contains(self.mediumWordLabel.text!.lowercased()) == true {
+                    print("Medium word done")
+                    self.mediumWordBackgroundView.backgroundColor = UIColor(named: "NeonGreen")
+                    self.mediumWordLabel.textColor = .white
+                    self.points += 20
+                } else if self.transcriptLabel.text?.contains(self.hardWordLabel.text!.lowercased()) == true {
+                    print("Hard word done")
+                    self.hardWordBackgroundView.backgroundColor = UIColor(named: "NeonGreen")
+                    self.hardWordLabel.textColor = .white
+                    self.points += 30
+                }
+                self.pointsLabel.text = "PONTOS: \(self.points)"
+                
+                isFinal = (result?.isFinal)!
+            }
+            
+            if error != nil || isFinal {
+                self.audioEngine.stop()
+                inputNode.removeTap(onBus: 0)
+                
+                self.recognitionRequest = nil
+                self.recognitionTask = nil
+            }
+            
+        })
+        
+        let recordingFormat = inputNode.outputFormat(forBus: 0)
+        inputNode.installTap(onBus: 0, bufferSize: 10000, format: recordingFormat) { (buffer, when) in
+            self.recognitionRequest?.append(buffer)
+        }
+        
+        audioEngine.prepare()
+        
+        do {
+            try audioEngine.start()
+        } catch {
+            print("audioEngine couldn`t start because of an error.")
+        }
+
+        transcriptLabel.text = "Say something, I`m listening"
     }
     
     @IBAction func sliderValueChanged(_ sender: Any) {
@@ -111,12 +222,18 @@ class RimeViewController: UIViewController {
     func fadeInWords() {
         UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveEaseIn, animations: {
             self.easyWordLabel.transform = CGAffineTransform.identity
+            self.easyWordBackgroundView.backgroundColor = .white
+            self.easyWordLabel.textColor = UIColor(named: "BackgroundGray")
         })
         UIView.animate(withDuration: 0.3, delay: 0.2, options: .curveEaseIn, animations: {
             self.mediumWordLabel.transform = CGAffineTransform.identity
+            self.mediumWordBackgroundView.backgroundColor = .white
+            self.mediumWordLabel.textColor = UIColor(named: "BackgroundGray")
         })
         UIView.animate(withDuration: 0.3, delay: 0.3, options: .curveEaseIn, animations: {
             self.hardWordLabel.transform = CGAffineTransform.identity
+            self.hardWordBackgroundView.backgroundColor = .white
+            self.hardWordLabel.textColor = UIColor(named: "BackgroundGray")
         })
     }
     
@@ -125,7 +242,7 @@ class RimeViewController: UIViewController {
         
         do {
             try AVAudioSession.sharedInstance().setMode(.default)
-            try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
+            try AVAudioSession.sharedInstance().setCategory(.playAndRecord)
                 
             guard let urlString = urlString else {
                 return
@@ -147,6 +264,14 @@ class RimeViewController: UIViewController {
     func removePlayer() {
         if let player = player {
             player.stop()
+        }
+    }
+    
+    func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool) {
+        if available {
+            print("Available")
+        } else {
+            print("Not available")
         }
     }
 }
