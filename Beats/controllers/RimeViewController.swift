@@ -46,15 +46,9 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
         // Add styles
         playOrStopButton.layer.cornerRadius = 20
         
-        // Play or Stop Button
-        playOrStop()
-        
         // Words
         fadeInWords()
         sortWords()
-        
-        // Player
-        configurePlayer()
         
         // Speech Recognizer
         speechRecognizer?.delegate = self
@@ -65,6 +59,9 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
         } else {
             startRecording()
         }
+        
+        // Play Beat
+        playOrStop()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -80,7 +77,7 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
         
         let audioSession = AVAudioSession.sharedInstance()
         do {
-            try audioSession.setCategory(.playAndRecord)
+            try audioSession.setCategory(.playAndRecord, options: [.defaultToSpeaker, .allowBluetooth, .allowBluetoothA2DP])
             try audioSession.setMode(.measurement)
             try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
         } catch {
@@ -153,7 +150,7 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
         })
         
         let recordingFormat = inputNode.outputFormat(forBus: 0)
-        inputNode.installTap(onBus: 0, bufferSize: 10000, format: recordingFormat) { (buffer, when) in
+        inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer, when) in
             self.recognitionRequest?.append(buffer)
         }
         
@@ -280,7 +277,8 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
         
         do {
             try AVAudioSession.sharedInstance().setMode(.default)
-            try AVAudioSession.sharedInstance().setCategory(.playAndRecord)
+            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, options: [.defaultToSpeaker, .allowBluetooth, .allowBluetoothA2DP])
+            try AVAudioSession.sharedInstance().setActive(true)
                 
             guard let urlString = urlString else {
                 return
