@@ -98,6 +98,11 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
         
         recognitionRequest.shouldReportPartialResults = true
         
+        // Keep speech recognition data on device
+//        if #available(iOS 13, *) {
+//            recognitionRequest.requiresOnDeviceRecognition = true
+//        }
+        
         recognitionTask = speechRecognizer?.recognitionTask(with: recognitionRequest, resultHandler: { result, error in
             
             var isFinal = false
@@ -111,21 +116,25 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
                 }
                 
                 self.transcriptLabel.text = self.transcriptionText
+                print(self.transcriptionText)
                 
-                if self.transcriptLabel.text?.contains(self.easyWordLabel.text!.lowercased()) == true {
+                if self.transcriptLabel.text?.lowercased().contains(self.easyWordLabel.text!.lowercased()) == true {
                     print("Easy word done")
                     self.easyWordBackgroundView.backgroundColor = UIColor(named: "NeonGreen")
-                    self.easyWordLabel.textColor = .white
+                    self.performPointsAnimation(label: self.easyWordLabel)
+                    self.easyWordLabel.text = "+ 10 pontos"
                     self.points += 10
-                } else if self.transcriptLabel.text?.contains(self.mediumWordLabel.text!.lowercased()) == true {
+                } else if self.transcriptLabel.text?.lowercased().contains(self.mediumWordLabel.text!.lowercased()) == true {
                     print("Medium word done")
                     self.mediumWordBackgroundView.backgroundColor = UIColor(named: "NeonGreen")
-                    self.mediumWordLabel.textColor = .white
+                    self.performPointsAnimation(label: self.mediumWordLabel)
+                    self.mediumWordLabel.text = "+ 20 pontos"
                     self.points += 20
-                } else if self.transcriptLabel.text?.contains(self.hardWordLabel.text!.lowercased()) == true {
+                } else if self.transcriptLabel.text?.lowercased().contains(self.hardWordLabel.text!.lowercased()) == true {
                     print("Hard word done")
                     self.hardWordBackgroundView.backgroundColor = UIColor(named: "NeonGreen")
-                    self.hardWordLabel.textColor = .white
+                    self.performPointsAnimation(label: self.hardWordLabel)
+                    self.hardWordLabel.text = "+ 30 pontos"
                     self.points += 30
                 }
                 self.pointsLabel.text = "PONTOS: \(self.points)"
@@ -191,19 +200,37 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
             rimeCurrentState = .playing
             playOrStopButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
             self.timer.invalidate()
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "Paused") as? PausedPopUpViewController
+            navigationController?.present(vc!, animated: true, completion: nil)
             print("Beat paused")
         }
     }
     
     func sortWords() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            self.easyWordLabel.text = WordsBank.shared.easyWordsList.randomElement()
+            self.sortWord(label: self.easyWordLabel, level: .easy)
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-            self.mediumWordLabel.text = WordsBank.shared.mediumWordsList.randomElement()
+            self.sortWord(label: self.mediumWordLabel, level: .medium)
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            self.hardWordLabel.text = WordsBank.shared.hardWordsList.randomElement()
+            self.sortWord(label: self.hardWordLabel, level: .hard)
+        }
+    }
+    
+    func sortWord(label: UILabel, level: WordLevel) {
+        let oldWord = label.text
+        while label.text == oldWord {
+            switch level {
+            case .easy:
+                label.text = WordsBank.shared.easyWordsList.randomElement()
+            case .medium:
+                label.text = WordsBank.shared.mediumWordsList.randomElement()
+            case .hard:
+                label.text = WordsBank.shared.hardWordsList.randomElement()
+            }
         }
     }
     
@@ -218,6 +245,7 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
             self.hardWordLabel.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
         })
     }
+    
     
     func fadeInWords() {
         UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveEaseIn, animations: {
@@ -234,6 +262,16 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
             self.hardWordLabel.transform = CGAffineTransform.identity
             self.hardWordBackgroundView.backgroundColor = .white
             self.hardWordLabel.textColor = UIColor(named: "BackgroundGray")
+        })
+    }
+    
+    func performPointsAnimation(label: UILabel) {
+        label.textColor = .white
+        UIView.animate(withDuration: 0.15, delay: 0.0, options: .curveEaseOut, animations: {
+            label.transform = CGAffineTransform.init(scaleX: 0.5, y: 0.5)
+        })
+        UIView.animate(withDuration: 0.15, delay: 0.15, options: .curveEaseIn, animations: {
+            label.transform = CGAffineTransform.init(scaleX: 1.1, y: 1.1)
         })
     }
     
@@ -279,4 +317,10 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
 enum RimeCurrentState {
     case playing
     case paused
+}
+
+enum WordLevel {
+    case easy
+    case medium
+    case hard
 }

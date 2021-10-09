@@ -39,7 +39,18 @@ struct WordsBank {
         "Bebê",
         "Chuva",
         "Poluição",
-        "Fogo"
+        "Fogo",
+        "Muleke",
+        "Noção",
+        "Pão",
+        "Falir",
+        "Morrer",
+        "Fazer",
+        "Ensinar",
+        "Aprender",
+        "Caipirinha",
+        "Gole",
+        "Corre",
     ]
     
     var mediumWordsList = [
@@ -63,6 +74,16 @@ struct WordsBank {
         "Geladeira",
         "Sol",
         "Água",
+        "Cabana",
+        "Banana",
+        "Dinamite",
+        "Jogo",
+        "Angola",
+        "Sacola",
+        "Janela",
+        "Jabuticaba",
+        "Planta",
+        "Barraca"
     ]
     
     var hardWordsList = [
@@ -72,7 +93,6 @@ struct WordsBank {
         "Cogumelo",
         "Naruto",
         "Submarino",
-        "Noz",
         "Áudio",
         "Complexo",
         "Dados",
@@ -80,13 +100,26 @@ struct WordsBank {
         "Da Vinci",
         "Rinoceronte",
         "Hibisco",
-        "Abduzir",
         "Balbúrdia",
         "Ardiloso",
         "Dilúvio",
         "Frenético",
         "Idiossincrasia",
         "Incólume",
-        "Tóxico"
+        "Tóxico",
+        "Clips",
+        "Espairecer",
+        "Trufas",
+        "Baleia",
+        "Cachorro",
+        "Pescoço",
+        "Plutônio",
+        "Ozônio",
+        "Enxofre",
+        "Almondegas",
+        "Abóbora",
+        "Espinafre",
+        "iPhone",
+        "Jogatina",
     ]
 }
