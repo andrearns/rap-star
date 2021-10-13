@@ -8,6 +8,7 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
     var beat: Beat!
     var rimeCurrentState: RimeCurrentState = .playing
     var timer = Timer()
+    var finishTimer = Timer()
     var player: AVAudioPlayer?
     
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "pt-BR"))
@@ -53,6 +54,21 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
         // Speech Recognizer
         speechRecognizer?.delegate = self
         
+        // Finish Timer
+        self.finishTimer = Timer.scheduledTimer(withTimeInterval: TimeInterval(60), repeats: false, block: { _ in
+            print("Beat finished")
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "Finished") as! BeatFinishedViewController
+            vc.points = self.points
+            if let player = self.player {
+                player.stop()
+            }
+            self.navigationController?.present(vc, animated: true, completion: nil)
+        })
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if audioEngine.isRunning {
             audioEngine.stop()
             recognitionRequest?.endAudio()

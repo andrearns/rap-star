@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Beats disponíveis-->
+        <!--Freestyle Rap disponíveis-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Beats disponíveis" interfaceStyle="light" id="BYZ-38-t0r" customClass="BeatsViewController" customModule="Beats" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Freestyle Rap disponíveis" interfaceStyle="light" id="BYZ-38-t0r" customClass="BeatsViewController" customModule="Freestyle_Rap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BeatCell" id="HcV-eP-ZQv" customClass="BeatTableViewCell" customModule="Beats" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BeatCell" id="HcV-eP-ZQv" customClass="BeatTableViewCell" customModule="Freestyle_Rap" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="374" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HcV-eP-ZQv" id="LHR-57-dpx">
@@ -107,8 +107,8 @@
                             <constraint firstItem="FOG-kX-T6l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iQr-xX-DE6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Beats disponíveis" largeTitleDisplayMode="always" id="J16-ZD-BbZ">
-                        <barButtonItem key="backBarButtonItem" title="Beats disponíveis" id="vBS-eT-kk2"/>
+                    <navigationItem key="navigationItem" title="Freestyle Rap disponíveis" largeTitleDisplayMode="always" id="J16-ZD-BbZ">
+                        <barButtonItem key="backBarButtonItem" title="Freestyle Rap disponíveis" id="vBS-eT-kk2"/>
                     </navigationItem>
                     <connections>
                         <outlet property="beatsTableView" destination="i01-XO-tCo" id="MOb-b4-Nzm"/>
@@ -121,7 +121,7 @@
         <!--Rime View Controller-->
         <scene sceneID="e53-KC-sQT">
             <objects>
-                <viewController storyboardIdentifier="Rime" id="XyG-jK-8kK" customClass="RimeViewController" customModule="Beats" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Rime" id="XyG-jK-8kK" customClass="RimeViewController" customModule="Freestyle_Rap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MwM-Ar-Fwv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -344,7 +344,6 @@
                             <constraint firstItem="9i8-BQ-J6I" firstAttribute="top" secondItem="da9-hS-EMP" secondAttribute="top" constant="40" id="MBv-Lc-i4N"/>
                             <constraint firstItem="15C-3N-dt0" firstAttribute="top" secondItem="AGc-X7-QVY" secondAttribute="bottom" constant="20" id="Mzf-aG-7ap"/>
                             <constraint firstItem="5Gc-FF-7AY" firstAttribute="leading" secondItem="da9-hS-EMP" secondAttribute="leading" constant="60" id="PbB-aN-Y2U"/>
-                            <constraint firstItem="AGc-X7-QVY" firstAttribute="centerX" secondItem="Fhs-ab-FSa" secondAttribute="centerX" id="R3q-uy-cWu"/>
                             <constraint firstItem="RcU-4g-pMf" firstAttribute="top" secondItem="15C-3N-dt0" secondAttribute="bottom" constant="40" id="Sd8-xy-tlL"/>
                             <constraint firstItem="RcU-4g-pMf" firstAttribute="top" secondItem="iMa-jR-718" secondAttribute="bottom" id="ULy-pN-Ceo"/>
                             <constraint firstItem="kDI-tz-WeH" firstAttribute="leading" secondItem="da9-hS-EMP" secondAttribute="leading" constant="60" id="VqE-xz-vod"/>
@@ -391,7 +390,7 @@
         <!--Paused Pop Up View Controller-->
         <scene sceneID="0n8-32-fu6">
             <objects>
-                <viewController storyboardIdentifier="Paused" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="lAF-yo-OGN" customClass="PausedPopUpViewController" customModule="Beats" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Paused" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="lAF-yo-OGN" customClass="PausedPopUpViewController" customModule="Freestyle_Rap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q1Q-yX-dPa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -399,7 +398,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eib-Nt-Pqa">
                                 <rect key="frame" x="20" y="315" width="374" height="276"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOGO PAUSADO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzu-QX-xLe">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEAT PAUSADO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzu-QX-xLe">
                                         <rect key="frame" x="20" y="40" width="334" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="R4u-ar-nYT"/>
@@ -415,14 +414,8 @@
                                             <constraint firstAttribute="height" constant="50" id="RNp-ZW-eka"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="    Continuar">
-                                                    <attributes>
-                                                        <font key="NSFont" size="18" name="SFProDisplay-Semibold"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system" title="    Continuar">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -436,15 +429,8 @@
                                             <constraint firstAttribute="height" constant="50" id="maa-1W-taX"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Voltar para o menu">
-                                                    <attributes>
-                                                        <font key="NSFont" size="18" name="SFProDisplay-Semibold"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <buttonConfiguration key="configuration" style="plain" title="Voltar para o menu">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -486,10 +472,10 @@
             </objects>
             <point key="canvasLocation" x="2571.0144927536235" y="-48.214285714285715"/>
         </scene>
-        <!--Beats disponíveis-->
+        <!--Freestyle Rap disponíveis-->
         <scene sceneID="lvd-as-V1N">
             <objects>
-                <navigationController title="Beats disponíveis" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="dBD-by-MDW" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Home" title="Freestyle Rap disponíveis" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" navigationBarHidden="YES" id="dBD-by-MDW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="NtS-X5-Tzt">
@@ -514,10 +500,122 @@
             </objects>
             <point key="canvasLocation" x="-59.420289855072468" y="-48.214285714285715"/>
         </scene>
+        <!--Beat Finished View Controller-->
+        <scene sceneID="xTP-77-LNH">
+            <objects>
+                <viewController storyboardIdentifier="Finished" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="CMc-c5-Jih" customClass="BeatFinishedViewController" customModule="Freestyle_Rap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zIh-jO-jxY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ht6-xl-jde">
+                                <rect key="frame" x="20" y="270.5" width="374" height="365"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MANDOU BEM!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzr-4b-qeh">
+                                        <rect key="frame" x="20" y="40" width="334" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="n2h-0w-0b9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfh-DA-wPg">
+                                        <rect key="frame" x="20" y="275" width="334" height="50"/>
+                                        <color key="backgroundColor" name="NeonGreen"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="8pT-qU-EUq"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Continuar">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="finish:" destination="CMc-c5-Jih" eventType="touchUpInside" id="hby-Aq-nsl"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Z09-cZ-WGg">
+                                        <rect key="frame" x="81" y="109" width="64" height="61"/>
+                                        <color key="tintColor" name="NeonGreen"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="8dx-5z-bMs"/>
+                                            <constraint firstAttribute="height" constant="50" id="sT2-tp-JSE"/>
+                                        </constraints>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40" scale="large"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="p4G-tL-lMJ">
+                                        <rect key="frame" x="155" y="109" width="64" height="61"/>
+                                        <color key="tintColor" name="NeonGreen"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="14J-AJ-Itq"/>
+                                            <constraint firstAttribute="height" constant="50" id="rHl-mi-4pa"/>
+                                        </constraints>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40" scale="large"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OKg-VP-ixI">
+                                        <rect key="frame" x="229" y="109" width="64" height="61"/>
+                                        <color key="tintColor" name="NeonGreen"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="T9f-68-u8z"/>
+                                            <constraint firstAttribute="height" constant="50" id="sCb-Qi-7bi"/>
+                                        </constraints>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40" scale="large"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PONTOS: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIb-Kh-t8B">
+                                        <rect key="frame" x="124" y="206" width="126" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="BackgroundGray"/>
+                                <constraints>
+                                    <constraint firstItem="p4G-tL-lMJ" firstAttribute="centerX" secondItem="mzr-4b-qeh" secondAttribute="centerX" id="1qI-Vn-GYM"/>
+                                    <constraint firstAttribute="trailing" secondItem="nfh-DA-wPg" secondAttribute="trailing" constant="20" symbolic="YES" id="56i-du-ggK"/>
+                                    <constraint firstItem="nfh-DA-wPg" firstAttribute="leading" secondItem="ht6-xl-jde" secondAttribute="leading" constant="20" id="6L0-mr-L3E"/>
+                                    <constraint firstAttribute="trailing" secondItem="mzr-4b-qeh" secondAttribute="trailing" constant="20" id="6Wg-GW-eZj"/>
+                                    <constraint firstItem="EIb-Kh-t8B" firstAttribute="centerX" secondItem="p4G-tL-lMJ" secondAttribute="centerX" id="BBa-IR-2UN"/>
+                                    <constraint firstItem="OKg-VP-ixI" firstAttribute="centerY" secondItem="p4G-tL-lMJ" secondAttribute="centerY" id="Wjd-PW-bAB"/>
+                                    <constraint firstAttribute="height" constant="365" id="cPc-Wn-pew"/>
+                                    <constraint firstItem="mzr-4b-qeh" firstAttribute="leading" secondItem="ht6-xl-jde" secondAttribute="leading" constant="20" id="cnY-2h-obs"/>
+                                    <constraint firstItem="p4G-tL-lMJ" firstAttribute="leading" secondItem="Z09-cZ-WGg" secondAttribute="trailing" constant="10" id="gpD-Fh-eox"/>
+                                    <constraint firstItem="p4G-tL-lMJ" firstAttribute="centerY" secondItem="Z09-cZ-WGg" secondAttribute="centerY" id="iMH-me-a7x"/>
+                                    <constraint firstItem="mzr-4b-qeh" firstAttribute="top" secondItem="ht6-xl-jde" secondAttribute="top" constant="40" id="jqD-pF-76x"/>
+                                    <constraint firstAttribute="bottom" secondItem="nfh-DA-wPg" secondAttribute="bottom" constant="40" id="kOx-ka-ms7"/>
+                                    <constraint firstItem="Z09-cZ-WGg" firstAttribute="top" secondItem="mzr-4b-qeh" secondAttribute="bottom" constant="40" id="orJ-Wz-eIe"/>
+                                    <constraint firstItem="nfh-DA-wPg" firstAttribute="top" secondItem="EIb-Kh-t8B" secondAttribute="bottom" constant="40" id="qwo-yd-ygI"/>
+                                    <constraint firstItem="OKg-VP-ixI" firstAttribute="leading" secondItem="p4G-tL-lMJ" secondAttribute="trailing" constant="10" id="s9K-iV-kJ9"/>
+                                    <constraint firstItem="EIb-Kh-t8B" firstAttribute="top" secondItem="p4G-tL-lMJ" secondAttribute="bottom" constant="40" id="ymq-9c-RV8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QP5-eb-znu"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.89876509689999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QP5-eb-znu" firstAttribute="trailing" secondItem="ht6-xl-jde" secondAttribute="trailing" constant="20" id="CLZ-JA-q4w"/>
+                            <constraint firstItem="ht6-xl-jde" firstAttribute="centerY" secondItem="QP5-eb-znu" secondAttribute="centerY" id="Ccd-br-w6l"/>
+                            <constraint firstItem="ht6-xl-jde" firstAttribute="leading" secondItem="QP5-eb-znu" secondAttribute="leading" constant="20" id="eNj-4v-5qp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="nfh-DA-wPg" id="HRi-u2-SOF"/>
+                        <outlet property="pointsLabel" destination="EIb-Kh-t8B" id="bQQ-p0-Jmo"/>
+                        <outlet property="popUpBackgroundView" destination="ht6-xl-jde" id="5lu-9e-FKG"/>
+                        <outlet property="star1ImageView" destination="Z09-cZ-WGg" id="pXk-sg-YCm"/>
+                        <outlet property="star2ImageView" destination="p4G-tL-lMJ" id="Gz7-XG-bTG"/>
+                        <outlet property="star3ImageView" destination="OKg-VP-ixI" id="kEb-VU-jDO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tnz-Pq-O7j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3435" y="-48"/>
+        </scene>
     </scenes>
     <resources>
         <image name="beatCoverTest" width="52" height="52"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="BackgroundGray">
             <color red="0.11699999868869781" green="0.11699999868869781" blue="0.11699999868869781" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
