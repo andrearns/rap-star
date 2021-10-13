@@ -21,6 +21,7 @@
 		5B1FC297270E7068009BD98E /* beat3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B1FC296270E7068009BD98E /* beat3.mp3 */; };
 		5B1FC299270E7C04009BD98E /* BeatsBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FC298270E7C04009BD98E /* BeatsBank.swift */; };
 		5B1FC29D2710F32E009BD98E /* PausedPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FC29C2710F32E009BD98E /* PausedPopUpViewController.swift */; };
+		5B1FC2A127166FBE009BD98E /* BeatFinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FC2A027166FBE009BD98E /* BeatFinishedViewController.swift */; };
 		5BF7AA5E270E19390092A666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AA5D270E19390092A666 /* AppDelegate.swift */; };
 		5BF7AA60270E19390092A666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AA5F270E19390092A666 /* SceneDelegate.swift */; };
 		5BF7AA62270E19390092A666 /* BeatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AA61270E19390092A666 /* BeatsViewController.swift */; };
@@ -47,6 +48,7 @@
 		5B1FC296270E7068009BD98E /* beat3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beat3.mp3; path = ../../../../../../Downloads/beat3.mp3; sourceTree = "<group>"; };
 		5B1FC298270E7C04009BD98E /* BeatsBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatsBank.swift; sourceTree = "<group>"; };
 		5B1FC29C2710F32E009BD98E /* PausedPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PausedPopUpViewController.swift; sourceTree = "<group>"; };
+		5B1FC2A027166FBE009BD98E /* BeatFinishedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatFinishedViewController.swift; sourceTree = "<group>"; };
 		5BF7AA5A270E19390092A666 /* Beats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF7AA5D270E19390092A666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BF7AA5F270E19390092A666 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				5BF7AA61270E19390092A666 /* BeatsViewController.swift */,
 				5BF7AA78270E26130092A666 /* RimeViewController.swift */,
 				5B1FC29C2710F32E009BD98E /* PausedPopUpViewController.swift */,
+				5B1FC2A027166FBE009BD98E /* BeatFinishedViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				5BF7AA77270E22510092A666 /* BeatTableViewCell.swift in Sources */,
 				5BF7AA79270E26130092A666 /* RimeViewController.swift in Sources */,
 				5BF7AA62270E19390092A666 /* BeatsViewController.swift in Sources */,
+				5B1FC2A127166FBE009BD98E /* BeatFinishedViewController.swift in Sources */,
 				5B1FC29D2710F32E009BD98E /* PausedPopUpViewController.swift in Sources */,
 				5BF7AA75270E1A9A0092A666 /* Beat.swift in Sources */,
 				5B1FC299270E7C04009BD98E /* BeatsBank.swift in Sources */,
