@@ -12,7 +12,7 @@
         <!--Freestyle Rap disponíveis-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Freestyle Rap disponíveis" interfaceStyle="light" id="BYZ-38-t0r" customClass="BeatsViewController" customModule="Freestyle_Rap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Freestyle Rap disponíveis" interfaceStyle="light" id="BYZ-38-t0r" customClass="BeatsViewController" customModule="Beats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BeatCell" id="HcV-eP-ZQv" customClass="BeatTableViewCell" customModule="Freestyle_Rap" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BeatCell" id="HcV-eP-ZQv" customClass="BeatTableViewCell" customModule="Beats" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="374" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HcV-eP-ZQv" id="LHR-57-dpx">
@@ -121,7 +121,7 @@
         <!--Rime View Controller-->
         <scene sceneID="e53-KC-sQT">
             <objects>
-                <viewController storyboardIdentifier="Rime" id="XyG-jK-8kK" customClass="RimeViewController" customModule="Freestyle_Rap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Rime" id="XyG-jK-8kK" customClass="RimeViewController" customModule="Beats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MwM-Ar-Fwv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -390,7 +390,7 @@
         <!--Paused Pop Up View Controller-->
         <scene sceneID="0n8-32-fu6">
             <objects>
-                <viewController storyboardIdentifier="Paused" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="lAF-yo-OGN" customClass="PausedPopUpViewController" customModule="Freestyle_Rap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Paused" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="lAF-yo-OGN" customClass="PausedPopUpViewController" customModule="Beats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q1Q-yX-dPa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -503,7 +503,7 @@
         <!--Beat Finished View Controller-->
         <scene sceneID="xTP-77-LNH">
             <objects>
-                <viewController storyboardIdentifier="Finished" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="CMc-c5-Jih" customClass="BeatFinishedViewController" customModule="Freestyle_Rap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Finished" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="CMc-c5-Jih" customClass="BeatFinishedViewController" customModule="Beats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zIh-jO-jxY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -512,7 +512,7 @@
                                 <rect key="frame" x="20" y="270.5" width="374" height="365"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MANDOU BEM!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzr-4b-qeh">
-                                        <rect key="frame" x="20" y="40" width="334" height="36"/>
+                                        <rect key="frame" x="79.5" y="40" width="215" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="n2h-0w-0b9"/>
                                         </constraints>
@@ -574,11 +574,9 @@
                                     <constraint firstItem="p4G-tL-lMJ" firstAttribute="centerX" secondItem="mzr-4b-qeh" secondAttribute="centerX" id="1qI-Vn-GYM"/>
                                     <constraint firstAttribute="trailing" secondItem="nfh-DA-wPg" secondAttribute="trailing" constant="20" symbolic="YES" id="56i-du-ggK"/>
                                     <constraint firstItem="nfh-DA-wPg" firstAttribute="leading" secondItem="ht6-xl-jde" secondAttribute="leading" constant="20" id="6L0-mr-L3E"/>
-                                    <constraint firstAttribute="trailing" secondItem="mzr-4b-qeh" secondAttribute="trailing" constant="20" id="6Wg-GW-eZj"/>
                                     <constraint firstItem="EIb-Kh-t8B" firstAttribute="centerX" secondItem="p4G-tL-lMJ" secondAttribute="centerX" id="BBa-IR-2UN"/>
                                     <constraint firstItem="OKg-VP-ixI" firstAttribute="centerY" secondItem="p4G-tL-lMJ" secondAttribute="centerY" id="Wjd-PW-bAB"/>
                                     <constraint firstAttribute="height" constant="365" id="cPc-Wn-pew"/>
-                                    <constraint firstItem="mzr-4b-qeh" firstAttribute="leading" secondItem="ht6-xl-jde" secondAttribute="leading" constant="20" id="cnY-2h-obs"/>
                                     <constraint firstItem="p4G-tL-lMJ" firstAttribute="leading" secondItem="Z09-cZ-WGg" secondAttribute="trailing" constant="10" id="gpD-Fh-eox"/>
                                     <constraint firstItem="p4G-tL-lMJ" firstAttribute="centerY" secondItem="Z09-cZ-WGg" secondAttribute="centerY" id="iMH-me-a7x"/>
                                     <constraint firstItem="mzr-4b-qeh" firstAttribute="top" secondItem="ht6-xl-jde" secondAttribute="top" constant="40" id="jqD-pF-76x"/>
@@ -586,6 +584,7 @@
                                     <constraint firstItem="Z09-cZ-WGg" firstAttribute="top" secondItem="mzr-4b-qeh" secondAttribute="bottom" constant="40" id="orJ-Wz-eIe"/>
                                     <constraint firstItem="nfh-DA-wPg" firstAttribute="top" secondItem="EIb-Kh-t8B" secondAttribute="bottom" constant="40" id="qwo-yd-ygI"/>
                                     <constraint firstItem="OKg-VP-ixI" firstAttribute="leading" secondItem="p4G-tL-lMJ" secondAttribute="trailing" constant="10" id="s9K-iV-kJ9"/>
+                                    <constraint firstItem="mzr-4b-qeh" firstAttribute="centerX" secondItem="ht6-xl-jde" secondAttribute="centerX" id="tKF-CE-AZm"/>
                                     <constraint firstItem="EIb-Kh-t8B" firstAttribute="top" secondItem="p4G-tL-lMJ" secondAttribute="bottom" constant="40" id="ymq-9c-RV8"/>
                                 </constraints>
                             </view>
