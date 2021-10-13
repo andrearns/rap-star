@@ -405,6 +405,7 @@
 				DEVELOPMENT_TEAM = VWZ6P536SX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Beats/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Freestyle Rap";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Permita que o app grave a sua voz durante a rima. A gravação será descartada sempre.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Permita que o app transcreva a sua rima";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -436,6 +437,7 @@
 				DEVELOPMENT_TEAM = VWZ6P536SX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Beats/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Freestyle Rap";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Permita que o app grave a sua voz durante a rima. A gravação será descartada sempre.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Permita que o app transcreva a sua rima";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
