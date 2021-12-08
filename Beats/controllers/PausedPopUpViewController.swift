@@ -14,13 +14,13 @@ class PausedPopUpViewController: UIViewController {
     }
     
     @IBAction func backToMainMenu(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "Home")
-        present(vc, animated: true, completion: nil)
+        NotificationCenter.default.post(name: Notification.Name.Action.BackToMainMenu, object: nil)
+        navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func continueBeat(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        NotificationCenter.default.post(name: Notification.Name.Action.PlayOrStop, object: nil)
+        navigationController?.popViewController(animated: true)
     }
     
 }

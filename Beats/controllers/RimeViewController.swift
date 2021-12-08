@@ -65,24 +65,16 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
             }
             self.navigationController?.present(vc, animated: true, completion: nil)
         })
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        if audioEngine.isRunning {
-            audioEngine.stop()
-            recognitionRequest?.endAudio()
-        } else {
-            startRecording()
-        }
         
-        // Play Beat
-        playOrStop()
+        startRecording()
+        NotificationCenter.default.addObserver(self, selector: #selector(playOrStop), name: Notification.Name.Action.PlayOrStop, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(backToMainMenu), name: Notification.Name.Action.BackToMainMenu, object: nil)
+        
+        configurePlayer()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        removePlayer()
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     func startRecording() {
@@ -111,7 +103,7 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
         
         recognitionRequest.shouldReportPartialResults = true
         
-        // Keep speech recognition data on device
+//         Keep speech recognition data on device
 //        if #available(iOS 13, *) {
 //            recognitionRequest.requiresOnDeviceRecognition = true
 //        }
@@ -195,29 +187,56 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
         playOrStop()
     }
     
-    func playOrStop() {
+    @objc func backToMainMenu() {
+        removePlayer()
+        removeSpeechRecognizer()
+    }
+    
+    
+    @objc func playOrStop() {
+        print("Play or stop")
+        
         if rimeCurrentState == .playing {
-            configurePlayer()
             rimeCurrentState = .paused
+        } else {
+            rimeCurrentState = .playing
+        }
+        
+        // Play
+        if rimeCurrentState == .playing {
+            print("Beat played")
+            
+            if let player = player {
+                player.play()
+            }
+            
             playOrStopButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
+            
             self.timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(wordsIntervalSlider.value.rounded()), repeats: true, block: { _ in
                 self.fadeOutWords()
                 self.sortWords()
                 self.fadeInWords()
             })
-            print("Beat played")
-        } else if rimeCurrentState == .paused {
+            startRecording()
+        }
+        // Stop
+        else if rimeCurrentState == .paused {
+            print("Beat stoped")
+            
             if let player = player {
                 player.stop()
             }
-            rimeCurrentState = .playing
+            
             playOrStopButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+            
             self.timer.invalidate()
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "Paused") as? PausedPopUpViewController
-            navigationController?.present(vc!, animated: true, completion: nil)
-            print("Beat paused")
+           
+            removeSpeechRecognizer()
+            
+            navigationController?.pushViewController(vc!, animated: true)
         }
     }
     
@@ -317,6 +336,20 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
         if let player = player {
             player.stop()
         }
+        player = nil
+        do {
+            try AVAudioSession.sharedInstance().setActive(false)
+        }
+        catch {
+            print("Error")
+        }
+    }
+    
+    func removeSpeechRecognizer() {
+        if audioEngine.isRunning {
+            audioEngine.stop()
+            recognitionRequest?.endAudio()
+        }
     }
     
     func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool) {
@@ -325,6 +358,13 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
         } else {
             print("Not available")
         }
+    }
+}
+
+extension Notification.Name {
+    struct Action {
+        static let PlayOrStop = Notification.Name("PlayOrStop")
+        static let BackToMainMenu = Notification.Name("BackToMainMenu")
     }
 }
 
