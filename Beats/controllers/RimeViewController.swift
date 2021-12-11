@@ -67,6 +67,7 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
         })
         
         startRecording()
+        configureTimer()
         NotificationCenter.default.addObserver(self, selector: #selector(playOrStop), name: Notification.Name.Action.PlayOrStop, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(backToMainMenu), name: Notification.Name.Action.BackToMainMenu, object: nil)
         
@@ -102,11 +103,6 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
         }
         
         recognitionRequest.shouldReportPartialResults = true
-        
-//         Keep speech recognition data on device
-//        if #available(iOS 13, *) {
-//            recognitionRequest.requiresOnDeviceRecognition = true
-//        }
         
         recognitionTask = speechRecognizer?.recognitionTask(with: recognitionRequest, resultHandler: { result, error in
             
@@ -176,11 +172,7 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
     @IBAction func sliderValueChanged(_ sender: Any) {
         wordsIntervalLabel.text = "Tempo entre a troca de palavras: \(wordsIntervalSlider.value.rounded()) s"
         self.timer.invalidate()
-        self.timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(wordsIntervalSlider.value.rounded()), repeats: true, block: { _ in
-            self.fadeOutWords()
-            self.sortWords()
-            self.fadeInWords()
-        })
+        configureTimer()
     }
     
     @IBAction func pressPlayOrStopButton(_ sender: Any) {
@@ -212,11 +204,7 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
             
             playOrStopButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
             
-            self.timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(wordsIntervalSlider.value.rounded()), repeats: true, block: { _ in
-                self.fadeOutWords()
-                self.sortWords()
-                self.fadeInWords()
-            })
+            configureTimer()
             startRecording()
         }
         // Stop
@@ -238,6 +226,14 @@ class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
             
             navigationController?.pushViewController(vc!, animated: true)
         }
+    }
+    
+    func configureTimer() {
+        self.timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(wordsIntervalSlider.value.rounded()), repeats: true, block: { _ in
+            self.fadeOutWords()
+            self.sortWords()
+            self.fadeInWords()
+        })
     }
     
     func sortWords() {

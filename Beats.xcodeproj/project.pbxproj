@@ -405,7 +405,7 @@
 				DEVELOPMENT_TEAM = VWZ6P536SX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Beats/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Freestyle Rap";
+				INFOPLIST_KEY_CFBundleDisplayName = Rapstar;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Permita que o app grave a sua voz durante a rima. A gravação será descartada sempre.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Permita que o app transcreva a sua rima";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -413,6 +413,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,7 +438,7 @@
 				DEVELOPMENT_TEAM = VWZ6P536SX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Beats/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Freestyle Rap";
+				INFOPLIST_KEY_CFBundleDisplayName = Rapstar;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Permita que o app grave a sua voz durante a rima. A gravação será descartada sempre.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Permita que o app transcreva a sua rima";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -445,6 +446,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
