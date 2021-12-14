@@ -22,6 +22,7 @@
 		5B1FC299270E7C04009BD98E /* BeatsBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FC298270E7C04009BD98E /* BeatsBank.swift */; };
 		5B1FC29D2710F32E009BD98E /* PausedPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FC29C2710F32E009BD98E /* PausedPopUpViewController.swift */; };
 		5B1FC2A127166FBE009BD98E /* BeatFinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FC2A027166FBE009BD98E /* BeatFinishedViewController.swift */; };
+		5B6CAEB327682E2F00AA9AD2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B6CAEB227682E2F00AA9AD2 /* GoogleService-Info.plist */; };
 		5BF7AA5E270E19390092A666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AA5D270E19390092A666 /* AppDelegate.swift */; };
 		5BF7AA60270E19390092A666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AA5F270E19390092A666 /* SceneDelegate.swift */; };
 		5BF7AA62270E19390092A666 /* BeatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AA61270E19390092A666 /* BeatsViewController.swift */; };
@@ -31,9 +32,11 @@
 		5BF7AA75270E1A9A0092A666 /* Beat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AA74270E1A9A0092A666 /* Beat.swift */; };
 		5BF7AA77270E22510092A666 /* BeatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AA76270E22510092A666 /* BeatTableViewCell.swift */; };
 		5BF7AA79270E26130092A666 /* RimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AA78270E26130092A666 /* RimeViewController.swift */; };
+		7843201F4DB475C0D9B7EFF0 /* Pods_Beats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFD2558833B1CD48E8F44A2 /* Pods_Beats.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39A01174B01C80436D5BAA42 /* Pods-Beats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beats.release.xcconfig"; path = "Target Support Files/Pods-Beats/Pods-Beats.release.xcconfig"; sourceTree = "<group>"; };
 		5B1FC27B270E3516009BD98E /* RimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RimeManager.swift; sourceTree = "<group>"; };
 		5B1FC27D270E365A009BD98E /* WordsBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsBank.swift; sourceTree = "<group>"; };
 		5B1FC284270E705C009BD98E /* beat1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beat1.mp3; path = ../../../../../../Downloads/beat1.mp3; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		5B1FC298270E7C04009BD98E /* BeatsBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatsBank.swift; sourceTree = "<group>"; };
 		5B1FC29C2710F32E009BD98E /* PausedPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PausedPopUpViewController.swift; sourceTree = "<group>"; };
 		5B1FC2A027166FBE009BD98E /* BeatFinishedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatFinishedViewController.swift; sourceTree = "<group>"; };
+		5B6CAEB227682E2F00AA9AD2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5BF7AA5A270E19390092A666 /* Beats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF7AA5D270E19390092A666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BF7AA5F270E19390092A666 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 		5BF7AA74270E1A9A0092A666 /* Beat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beat.swift; sourceTree = "<group>"; };
 		5BF7AA76270E22510092A666 /* BeatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatTableViewCell.swift; sourceTree = "<group>"; };
 		5BF7AA78270E26130092A666 /* RimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RimeViewController.swift; sourceTree = "<group>"; };
+		6AFD2558833B1CD48E8F44A2 /* Pods_Beats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBED4997FD6CA44156E01D0A /* Pods-Beats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beats.debug.xcconfig"; path = "Target Support Files/Pods-Beats/Pods-Beats.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +73,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7843201F4DB475C0D9B7EFF0 /* Pods_Beats.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		519B0013BF2CA25F0E6286E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AFD2558833B1CD48E8F44A2 /* Pods_Beats.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5B1FC27A270E3504009BD98E /* utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +118,8 @@
 			children = (
 				5BF7AA5C270E19390092A666 /* Beats */,
 				5BF7AA5B270E19390092A666 /* Products */,
+				F9813EE3814A0CA635F37DFD /* Pods */,
+				519B0013BF2CA25F0E6286E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +134,7 @@
 		5BF7AA5C270E19390092A666 /* Beats */ = {
 			isa = PBXGroup;
 			children = (
+				5B6CAEB227682E2F00AA9AD2 /* GoogleService-Info.plist */,
 				5B1FC27F270E3ED7009BD98E /* audios */,
 				5B1FC27A270E3504009BD98E /* utils */,
 				5BF7AA73270E1A600092A666 /* views */,
@@ -161,6 +179,15 @@
 			path = views;
 			sourceTree = "<group>";
 		};
+		F9813EE3814A0CA635F37DFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBED4997FD6CA44156E01D0A /* Pods-Beats.debug.xcconfig */,
+				39A01174B01C80436D5BAA42 /* Pods-Beats.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BF7AA6E270E193D0092A666 /* Build configuration list for PBXNativeTarget "Beats" */;
 			buildPhases = (
+				66C2BA6F99DBA03BE11BC409 /* [CP] Check Pods Manifest.lock */,
 				5BF7AA56270E19390092A666 /* Sources */,
 				5BF7AA57270E19390092A666 /* Frameworks */,
 				5BF7AA58270E19390092A666 /* Resources */,
+				A64113EF2963353583ADA538 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,6 +258,7 @@
 				5BF7AA67270E193D0092A666 /* Assets.xcassets in Resources */,
 				5B1FC289270E705C009BD98E /* beat2.mp3 in Resources */,
 				5B1FC297270E7068009BD98E /* beat3.mp3 in Resources */,
+				5B6CAEB327682E2F00AA9AD2 /* GoogleService-Info.plist in Resources */,
 				5B1FC294270E7064009BD98E /* beat8.mp3 in Resources */,
 				5B1FC291270E7064009BD98E /* beat4.mp3 in Resources */,
 				5BF7AA65270E19390092A666 /* Main.storyboard in Resources */,
@@ -236,6 +266,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66C2BA6F99DBA03BE11BC409 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beats-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A64113EF2963353583ADA538 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beats/Pods-Beats-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beats/Pods-Beats-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beats/Pods-Beats-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BF7AA56270E19390092A666 /* Sources */ = {
@@ -396,6 +468,7 @@
 		};
 		5BF7AA6F270E193D0092A666 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBED4997FD6CA44156E01D0A /* Pods-Beats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -413,7 +486,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,6 +502,7 @@
 		};
 		5BF7AA70270E193D0092A666 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39A01174B01C80436D5BAA42 /* Pods-Beats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -446,7 +520,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
