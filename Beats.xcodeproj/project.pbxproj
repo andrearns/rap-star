@@ -7,22 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B1FC27C270E3516009BD98E /* RimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FC27B270E3516009BD98E /* RimeManager.swift */; };
 		5B1FC27E270E365A009BD98E /* WordsBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FC27D270E365A009BD98E /* WordsBank.swift */; };
-		5B1FC287270E705C009BD98E /* beat1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B1FC284270E705C009BD98E /* beat1.mp3 */; };
-		5B1FC288270E705C009BD98E /* beat7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B1FC285270E705C009BD98E /* beat7.mp3 */; };
-		5B1FC289270E705C009BD98E /* beat2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B1FC286270E705C009BD98E /* beat2.mp3 */; };
-		5B1FC290270E7064009BD98E /* beat6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B1FC28A270E7063009BD98E /* beat6.mp3 */; };
-		5B1FC291270E7064009BD98E /* beat4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B1FC28B270E7063009BD98E /* beat4.mp3 */; };
-		5B1FC292270E7064009BD98E /* beat9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B1FC28C270E7064009BD98E /* beat9.mp3 */; };
-		5B1FC293270E7064009BD98E /* beat5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B1FC28D270E7064009BD98E /* beat5.mp3 */; };
-		5B1FC294270E7064009BD98E /* beat8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B1FC28E270E7064009BD98E /* beat8.mp3 */; };
-		5B1FC295270E7064009BD98E /* beat10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B1FC28F270E7064009BD98E /* beat10.mp3 */; };
-		5B1FC297270E7068009BD98E /* beat3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B1FC296270E7068009BD98E /* beat3.mp3 */; };
 		5B1FC299270E7C04009BD98E /* BeatsBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FC298270E7C04009BD98E /* BeatsBank.swift */; };
 		5B1FC29D2710F32E009BD98E /* PausedPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FC29C2710F32E009BD98E /* PausedPopUpViewController.swift */; };
 		5B1FC2A127166FBE009BD98E /* BeatFinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FC2A027166FBE009BD98E /* BeatFinishedViewController.swift */; };
 		5B6CAEB327682E2F00AA9AD2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B6CAEB227682E2F00AA9AD2 /* GoogleService-Info.plist */; };
+		5B6CAEB627683B7500AA9AD2 /* CrashTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6CAEB527683B7500AA9AD2 /* CrashTestViewController.swift */; };
+		5B6CAEC02768584B00AA9AD2 /* beat5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B6CAEB72768584400AA9AD2 /* beat5.mp3 */; };
+		5B6CAEC12768584B00AA9AD2 /* beat4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B6CAEB82768584400AA9AD2 /* beat4.mp3 */; };
+		5B6CAEC22768584B00AA9AD2 /* beat3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B6CAEB92768584500AA9AD2 /* beat3.mp3 */; };
+		5B6CAEC32768584B00AA9AD2 /* beat7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B6CAEBA2768584600AA9AD2 /* beat7.mp3 */; };
+		5B6CAEC42768584B00AA9AD2 /* beat6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B6CAEBB2768584700AA9AD2 /* beat6.mp3 */; };
+		5B6CAEC52768584B00AA9AD2 /* beat9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B6CAEBC2768584700AA9AD2 /* beat9.mp3 */; };
+		5B6CAEC62768584B00AA9AD2 /* beat8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B6CAEBD2768584800AA9AD2 /* beat8.mp3 */; };
+		5B6CAEC72768584B00AA9AD2 /* beat2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B6CAEBE2768584900AA9AD2 /* beat2.mp3 */; };
+		5B6CAEC82768584B00AA9AD2 /* beat1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B6CAEBF2768584A00AA9AD2 /* beat1.mp3 */; };
 		5BF7AA5E270E19390092A666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AA5D270E19390092A666 /* AppDelegate.swift */; };
 		5BF7AA60270E19390092A666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AA5F270E19390092A666 /* SceneDelegate.swift */; };
 		5BF7AA62270E19390092A666 /* BeatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AA61270E19390092A666 /* BeatsViewController.swift */; };
@@ -37,22 +36,21 @@
 
 /* Begin PBXFileReference section */
 		39A01174B01C80436D5BAA42 /* Pods-Beats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beats.release.xcconfig"; path = "Target Support Files/Pods-Beats/Pods-Beats.release.xcconfig"; sourceTree = "<group>"; };
-		5B1FC27B270E3516009BD98E /* RimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RimeManager.swift; sourceTree = "<group>"; };
 		5B1FC27D270E365A009BD98E /* WordsBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsBank.swift; sourceTree = "<group>"; };
-		5B1FC284270E705C009BD98E /* beat1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beat1.mp3; path = ../../../../../../Downloads/beat1.mp3; sourceTree = "<group>"; };
-		5B1FC285270E705C009BD98E /* beat7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beat7.mp3; path = ../../../../../../Downloads/beat7.mp3; sourceTree = "<group>"; };
-		5B1FC286270E705C009BD98E /* beat2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beat2.mp3; path = ../../../../../../Downloads/beat2.mp3; sourceTree = "<group>"; };
-		5B1FC28A270E7063009BD98E /* beat6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beat6.mp3; path = ../../../../../../Downloads/beat6.mp3; sourceTree = "<group>"; };
-		5B1FC28B270E7063009BD98E /* beat4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beat4.mp3; path = ../../../../../../Downloads/beat4.mp3; sourceTree = "<group>"; };
-		5B1FC28C270E7064009BD98E /* beat9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beat9.mp3; path = ../../../../../../Downloads/beat9.mp3; sourceTree = "<group>"; };
-		5B1FC28D270E7064009BD98E /* beat5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beat5.mp3; path = ../../../../../../Downloads/beat5.mp3; sourceTree = "<group>"; };
-		5B1FC28E270E7064009BD98E /* beat8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beat8.mp3; path = ../../../../../../Downloads/beat8.mp3; sourceTree = "<group>"; };
-		5B1FC28F270E7064009BD98E /* beat10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beat10.mp3; path = ../../../../../../Downloads/beat10.mp3; sourceTree = "<group>"; };
-		5B1FC296270E7068009BD98E /* beat3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beat3.mp3; path = ../../../../../../Downloads/beat3.mp3; sourceTree = "<group>"; };
 		5B1FC298270E7C04009BD98E /* BeatsBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatsBank.swift; sourceTree = "<group>"; };
 		5B1FC29C2710F32E009BD98E /* PausedPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PausedPopUpViewController.swift; sourceTree = "<group>"; };
 		5B1FC2A027166FBE009BD98E /* BeatFinishedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatFinishedViewController.swift; sourceTree = "<group>"; };
 		5B6CAEB227682E2F00AA9AD2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B6CAEB527683B7500AA9AD2 /* CrashTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashTestViewController.swift; sourceTree = "<group>"; };
+		5B6CAEB72768584400AA9AD2 /* beat5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat5.mp3; sourceTree = "<group>"; };
+		5B6CAEB82768584400AA9AD2 /* beat4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat4.mp3; sourceTree = "<group>"; };
+		5B6CAEB92768584500AA9AD2 /* beat3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat3.mp3; sourceTree = "<group>"; };
+		5B6CAEBA2768584600AA9AD2 /* beat7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat7.mp3; sourceTree = "<group>"; };
+		5B6CAEBB2768584700AA9AD2 /* beat6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat6.mp3; sourceTree = "<group>"; };
+		5B6CAEBC2768584700AA9AD2 /* beat9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat9.mp3; sourceTree = "<group>"; };
+		5B6CAEBD2768584800AA9AD2 /* beat8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat8.mp3; sourceTree = "<group>"; };
+		5B6CAEBE2768584900AA9AD2 /* beat2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat2.mp3; sourceTree = "<group>"; };
+		5B6CAEBF2768584A00AA9AD2 /* beat1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat1.mp3; sourceTree = "<group>"; };
 		5BF7AA5A270E19390092A666 /* Beats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF7AA5D270E19390092A666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BF7AA5F270E19390092A666 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,27 +86,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5B1FC27A270E3504009BD98E /* utils */ = {
-			isa = PBXGroup;
-			children = (
-				5B1FC27B270E3516009BD98E /* RimeManager.swift */,
-			);
-			path = utils;
-			sourceTree = "<group>";
-		};
 		5B1FC27F270E3ED7009BD98E /* audios */ = {
 			isa = PBXGroup;
 			children = (
-				5B1FC284270E705C009BD98E /* beat1.mp3 */,
-				5B1FC286270E705C009BD98E /* beat2.mp3 */,
-				5B1FC296270E7068009BD98E /* beat3.mp3 */,
-				5B1FC28B270E7063009BD98E /* beat4.mp3 */,
-				5B1FC28D270E7064009BD98E /* beat5.mp3 */,
-				5B1FC28A270E7063009BD98E /* beat6.mp3 */,
-				5B1FC285270E705C009BD98E /* beat7.mp3 */,
-				5B1FC28E270E7064009BD98E /* beat8.mp3 */,
-				5B1FC28C270E7064009BD98E /* beat9.mp3 */,
-				5B1FC28F270E7064009BD98E /* beat10.mp3 */,
+				5B6CAEBF2768584A00AA9AD2 /* beat1.mp3 */,
+				5B6CAEBE2768584900AA9AD2 /* beat2.mp3 */,
+				5B6CAEB92768584500AA9AD2 /* beat3.mp3 */,
+				5B6CAEB82768584400AA9AD2 /* beat4.mp3 */,
+				5B6CAEB72768584400AA9AD2 /* beat5.mp3 */,
+				5B6CAEBB2768584700AA9AD2 /* beat6.mp3 */,
+				5B6CAEBA2768584600AA9AD2 /* beat7.mp3 */,
+				5B6CAEBD2768584800AA9AD2 /* beat8.mp3 */,
+				5B6CAEBC2768584700AA9AD2 /* beat9.mp3 */,
 			);
 			path = audios;
 			sourceTree = "<group>";
@@ -134,9 +123,7 @@
 		5BF7AA5C270E19390092A666 /* Beats */ = {
 			isa = PBXGroup;
 			children = (
-				5B6CAEB227682E2F00AA9AD2 /* GoogleService-Info.plist */,
 				5B1FC27F270E3ED7009BD98E /* audios */,
-				5B1FC27A270E3504009BD98E /* utils */,
 				5BF7AA73270E1A600092A666 /* views */,
 				5BF7AA72270E1A580092A666 /* models */,
 				5BF7AA71270E1A4B0092A666 /* controllers */,
@@ -146,6 +133,7 @@
 				5BF7AA66270E193D0092A666 /* Assets.xcassets */,
 				5BF7AA68270E193D0092A666 /* LaunchScreen.storyboard */,
 				5BF7AA6B270E193D0092A666 /* Info.plist */,
+				5B6CAEB227682E2F00AA9AD2 /* GoogleService-Info.plist */,
 			);
 			path = Beats;
 			sourceTree = "<group>";
@@ -157,6 +145,7 @@
 				5BF7AA78270E26130092A666 /* RimeViewController.swift */,
 				5B1FC29C2710F32E009BD98E /* PausedPopUpViewController.swift */,
 				5B1FC2A027166FBE009BD98E /* BeatFinishedViewController.swift */,
+				5B6CAEB527683B7500AA9AD2 /* CrashTestViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -200,6 +189,7 @@
 				5BF7AA57270E19390092A666 /* Frameworks */,
 				5BF7AA58270E19390092A666 /* Resources */,
 				A64113EF2963353583ADA538 /* [CP] Embed Pods Frameworks */,
+				5B6CAEB427683B0800AA9AD2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -248,19 +238,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B1FC290270E7064009BD98E /* beat6.mp3 in Resources */,
-				5B1FC292270E7064009BD98E /* beat9.mp3 in Resources */,
-				5B1FC293270E7064009BD98E /* beat5.mp3 in Resources */,
-				5B1FC288270E705C009BD98E /* beat7.mp3 in Resources */,
-				5B1FC287270E705C009BD98E /* beat1.mp3 in Resources */,
+				5B6CAEC52768584B00AA9AD2 /* beat9.mp3 in Resources */,
+				5B6CAEC62768584B00AA9AD2 /* beat8.mp3 in Resources */,
+				5B6CAEC42768584B00AA9AD2 /* beat6.mp3 in Resources */,
 				5BF7AA6A270E193D0092A666 /* LaunchScreen.storyboard in Resources */,
-				5B1FC295270E7064009BD98E /* beat10.mp3 in Resources */,
 				5BF7AA67270E193D0092A666 /* Assets.xcassets in Resources */,
-				5B1FC289270E705C009BD98E /* beat2.mp3 in Resources */,
-				5B1FC297270E7068009BD98E /* beat3.mp3 in Resources */,
+				5B6CAEC32768584B00AA9AD2 /* beat7.mp3 in Resources */,
 				5B6CAEB327682E2F00AA9AD2 /* GoogleService-Info.plist in Resources */,
-				5B1FC294270E7064009BD98E /* beat8.mp3 in Resources */,
-				5B1FC291270E7064009BD98E /* beat4.mp3 in Resources */,
+				5B6CAEC82768584B00AA9AD2 /* beat1.mp3 in Resources */,
+				5B6CAEC22768584B00AA9AD2 /* beat3.mp3 in Resources */,
+				5B6CAEC12768584B00AA9AD2 /* beat4.mp3 in Resources */,
+				5B6CAEC72768584B00AA9AD2 /* beat2.mp3 in Resources */,
+				5B6CAEC02768584B00AA9AD2 /* beat5.mp3 in Resources */,
 				5BF7AA65270E19390092A666 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +257,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5B6CAEB427683B0800AA9AD2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		66C2BA6F99DBA03BE11BC409 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -314,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B6CAEB627683B7500AA9AD2 /* CrashTestViewController.swift in Sources */,
 				5BF7AA77270E22510092A666 /* BeatTableViewCell.swift in Sources */,
 				5BF7AA79270E26130092A666 /* RimeViewController.swift in Sources */,
 				5BF7AA62270E19390092A666 /* BeatsViewController.swift in Sources */,
@@ -324,7 +333,6 @@
 				5BF7AA5E270E19390092A666 /* AppDelegate.swift in Sources */,
 				5B1FC27E270E365A009BD98E /* WordsBank.swift in Sources */,
 				5BF7AA60270E19390092A666 /* SceneDelegate.swift in Sources */,
-				5B1FC27C270E3516009BD98E /* RimeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +392,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;

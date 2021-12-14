@@ -586,6 +586,37 @@
             </objects>
             <point key="canvasLocation" x="3435" y="-48"/>
         </scene>
+        <!--Crash Test View Controller-->
+        <scene sceneID="SwY-Tr-9RK">
+            <objects>
+                <viewController id="Ti2-yZ-KRS" customClass="CrashTestViewController" customModule="Beats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0tg-Pd-EbB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcO-Ls-oEx">
+                                <rect key="frame" x="103.5" y="437.5" width="207" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Tap to Crash"/>
+                                <connections>
+                                    <action selector="crashButtonTapped:" destination="Ti2-yZ-KRS" eventType="touchUpInside" id="rP4-rb-Lsa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p8w-sB-bSg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GcO-Ls-oEx" firstAttribute="width" secondItem="0tg-Pd-EbB" secondAttribute="width" multiplier="0.5" id="0gc-rC-EWa"/>
+                            <constraint firstItem="GcO-Ls-oEx" firstAttribute="height" secondItem="0tg-Pd-EbB" secondAttribute="height" multiplier="0.0345982" id="Kyy-Ij-cdV"/>
+                            <constraint firstItem="GcO-Ls-oEx" firstAttribute="centerY" secondItem="p8w-sB-bSg" secondAttribute="centerY" id="hpf-wl-mCD"/>
+                            <constraint firstItem="GcO-Ls-oEx" firstAttribute="centerX" secondItem="p8w-sB-bSg" secondAttribute="centerX" id="sj0-h3-I7z"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYI-aq-IYG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4310" y="-39"/>
+        </scene>
     </scenes>
     <resources>
         <image name="beatCoverTest" width="52" height="52"/>
@@ -593,7 +624,7 @@
         <image name="play.fill" catalog="system" width="116" height="128"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="BackgroundGray">
-            <color red="0.11699999868869781" green="0.11699999868869781" blue="0.11699999868869781" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="NeonGreen">
             <color red="0.10588235294117647" green="0.84313725490196079" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

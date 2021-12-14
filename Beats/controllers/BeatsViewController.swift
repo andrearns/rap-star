@@ -1,6 +1,7 @@
 import UIKit
+import FirebaseAnalytics
 
-class BeatsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+final class BeatsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var beatsTableView: UITableView!
     
@@ -22,9 +23,13 @@ class BeatsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Start beat")
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "Rime") as! RimeViewController
         vc.beat = BeatsBank.shared.beatsList[indexPath.row]
+        
+        Analytics.logEvent("beat_started", parameters: [:])
+        
         navigationController?.pushViewController(vc, animated: true)
     }
 

@@ -1,13 +1,6 @@
-//
-//  BeatTableViewCell.swift
-//  Beats
-//
-//  Created by André Arns on 06/10/21.
-//
-
 import UIKit
 
-class BeatTableViewCell: UITableViewCell {
+final class BeatTableViewCell: UITableViewCell {
 
     @IBOutlet var beatImageView: UIImageView!
     @IBOutlet var beatNameLabel: UILabel!

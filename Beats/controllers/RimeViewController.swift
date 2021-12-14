@@ -3,7 +3,7 @@ import Foundation
 import AVFoundation
 import Speech
 
-class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
+final class RimeViewController: UIViewController, SFSpeechRecognizerDelegate {
 
     var beat: Beat!
     var rimeCurrentState: RimeCurrentState = .playing
