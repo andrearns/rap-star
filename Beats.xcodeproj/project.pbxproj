@@ -11,6 +11,7 @@
 		5B1FC299270E7C04009BD98E /* BeatsBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FC298270E7C04009BD98E /* BeatsBank.swift */; };
 		5B1FC29D2710F32E009BD98E /* PausedPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FC29C2710F32E009BD98E /* PausedPopUpViewController.swift */; };
 		5B1FC2A127166FBE009BD98E /* BeatFinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FC2A027166FBE009BD98E /* BeatFinishedViewController.swift */; };
+		5B4ADBE0276A81F700075717 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4ADBDF276A81F700075717 /* ReminderViewController.swift */; };
 		5B6CAEB327682E2F00AA9AD2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B6CAEB227682E2F00AA9AD2 /* GoogleService-Info.plist */; };
 		5B6CAEB627683B7500AA9AD2 /* CrashTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6CAEB527683B7500AA9AD2 /* CrashTestViewController.swift */; };
 		5B6CAEC02768584B00AA9AD2 /* beat5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B6CAEB72768584400AA9AD2 /* beat5.mp3 */; };
@@ -40,6 +41,7 @@
 		5B1FC298270E7C04009BD98E /* BeatsBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatsBank.swift; sourceTree = "<group>"; };
 		5B1FC29C2710F32E009BD98E /* PausedPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PausedPopUpViewController.swift; sourceTree = "<group>"; };
 		5B1FC2A027166FBE009BD98E /* BeatFinishedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatFinishedViewController.swift; sourceTree = "<group>"; };
+		5B4ADBDF276A81F700075717 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		5B6CAEB227682E2F00AA9AD2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B6CAEB527683B7500AA9AD2 /* CrashTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashTestViewController.swift; sourceTree = "<group>"; };
 		5B6CAEB72768584400AA9AD2 /* beat5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat5.mp3; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		5BF7AA71270E1A4B0092A666 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5B4ADBDF276A81F700075717 /* ReminderViewController.swift */,
 				5BF7AA61270E19390092A666 /* BeatsViewController.swift */,
 				5BF7AA78270E26130092A666 /* RimeViewController.swift */,
 				5B1FC29C2710F32E009BD98E /* PausedPopUpViewController.swift */,
@@ -330,6 +333,7 @@
 				5B1FC29D2710F32E009BD98E /* PausedPopUpViewController.swift in Sources */,
 				5BF7AA75270E1A9A0092A666 /* Beat.swift in Sources */,
 				5B1FC299270E7C04009BD98E /* BeatsBank.swift in Sources */,
+				5B4ADBE0276A81F700075717 /* ReminderViewController.swift in Sources */,
 				5BF7AA5E270E19390092A666 /* AppDelegate.swift in Sources */,
 				5B1FC27E270E365A009BD98E /* WordsBank.swift in Sources */,
 				5BF7AA60270E19390092A666 /* SceneDelegate.swift in Sources */,
